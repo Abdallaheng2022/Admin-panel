@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتجات</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlin<link rel=" preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <section class="dashbord">
+      
+        <aside class="admin-panel-aside">
+            <p class="logo">Admin<span>Panel</span></p>
+            <nav>
+
+                <a href="./index.html" class="main-link"><span class="material-symbols-outlined">
+                        home
+                    </span>الرئيسية</a>
+                <a class="active" href="./products.html" class="product-link"><span class="material-symbols-outlined">
+                        storefront
+                    </span>المنتجات</a>
+                <a href="./customers.html" class="customers-link"><span class="material-symbols-outlined">
+                        contacts_product
+                    </span>المستخدمين</a>
+                <a href="./orders.html" class="orders-link">
+                    <span class="material-symbols-outlined">orders</span>الطلبات
+                </a>
+
+            </nav>
+        </aside>
+
+        <main>
+
+            <div class="topbar">
+                <div>
+                    <h1>المنتجات</h1>
+                    <p>إدارة المنتجات والمخزون</p>
+                </div>
+                <button  class="add_prod">
+                    + إضافة منتج</button>
+            </div>
+            <div class="slide-panel">
+                
+            </div>
+             <div class="panel">
+                  
+                <div class="toolbar">
+                  <div class="search">
+                     <input type="text" id="textSearch" placeholder="البحث عن المنتج...">
+                     <select id="category" name="category">
+                          <option value="">كل التصنيفات</option>
+                          <option value="electron">ألكترونيات</option> 
+                          <option value="accessories">إكسسوارات</option> 
+                          <option value="devices">الأجهزة</option>
+                     </select>
+                  </div>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                    <thead>
+                        <th> المنتج</th>
+                        <th>التصنيف </th>
+                        <th>السعر</th>
+                        <th>المخزون</th>
+                        <th>الحالة</th>
+                        <th>الإجراء</th>
+                    </thead>
+                    <tbody id="productBody">
+                        
+                    </tbody>
+                    </table>
+                </div>
+            </div>  
+
+
+        </main>
+      
+    </section>
+     <script src="script.js"></script>
+</body>
+</html>

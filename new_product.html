@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتجات</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlin<link rel=" preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <section class="dashbord">
+      
+        <aside class="admin-panel-aside">
+            <p class="logo">Admin<span>Panel</span></p>
+            <nav>
+
+                <a href="./index.html" class="main-link"><span class="material-symbols-outlined">
+                        home
+                    </span>الرئيسية</a>
+                <a class="active" href="./products.html" class="product-link"><span class="material-symbols-outlined">
+                        storefront
+                    </span>المنتجات</a>
+                <a href="./customers.html" class="customers-link"><span class="material-symbols-outlined">
+                        contacts_product
+                    </span>المستخدمين</a>
+                <a href="./orders.html" class="orders-link">
+                    <span class="material-symbols-outlined">orders</span>الطلبات
+                </a>
+
+            </nav>
+        </aside>
+
+        <main>
+             <div class="form-wrap">
+                   <form id="productForm">
+                        <label for="name">اسم المنتج</label>
+                        <input type="text" id="name" name="productName" required >
+                        <select id="category" name="category">
+                          <option value="">كل التصنيفات</option>
+                          <option value="ألكترونيات">ألكترونيات</option> 
+                          <option value="إكسسوارات">إكسسوارات</option> 
+                          <option value="الأجهزة">الأجهزة</option>
+                     </select>
+                     <label for="price">السعر</label>
+                     <input type="number" id="price" name="productPrice" required >
+                       <label for="amount">المخزون</label>
+                     <input type="number" id="amount" name="productAmount" required>
+                   
+                     <select id="state" name="stateCategory">
+                          <option value="">حالة المنتج</option>
+                          <option value="متوفر">متوفر</option> 
+                          <option value=" مخزون منخفض">  مخزون منخفض</option> 
+                          <option value="غير متوفر">غير متوفر</option>
+                     </select>
+
+                    <input type="file" id="productImage" accept="image/*" hidden>
+
+                    <label for="productImage" class="upload-btn">
+                    <span class="material-symbols-outlined">upload</span>
+                    اختر صورة المنتج
+                    </label>
+
+                    <img id="preview" hidden>
+                     <button class="add_prod" id="submit">حفظ</button>
+                   </form>
+                   
+
+                </div>
+              
+           
+
+
+        </main>
+      
+    </section>
+     <script src="./script.js"></script>
+</body>
+</html>

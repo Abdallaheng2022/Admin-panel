@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlin<link rel=" preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+
+</head>
+
+
+<body>
+    <section class="dashboard">
+
+
+        <aside class="admin-panel-aside">
+            <p class="logo">Admin<span>Panel</span></p>
+            <nav>
+
+                <a class="active" ref="./index.html" class="main-link"><span class="material-symbols-outlined">
+                        home
+                    </span>الرئيسية</a>
+                <a href="./products.html" class="product-link"><span class="material-symbols-outlined">
+                        storefront
+                    </span>المنتجات</a>
+                <a href="./customers.html" class="customers-link"><span class="material-symbols-outlined">
+                        contacts_product
+                    </span>المستخدمين</a>
+                <a href="./orders.html" class="orders-link">
+                    <span class="material-symbols-outlined">orders</span>الطلبات
+                </a>
+
+            </nav>
+        </aside>
+
+        <main>
+
+            <div class="topbar">
+                <div>
+                    <h1>الرئيسية</h1>
+                    <p>مرحبًا بكم في لوحة التحكم</p>
+                </div>
+                <div class="profile">
+                    <div class="avatar">
+                        A
+                    </div>
+                    <div class="avater-role">
+                        <strong>Admin</strong>
+                        <span>المدير</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="stats-sales">
+
+                <div class="stats-card">
+                    <div class="icon">💰</div>
+                    <div class="stats-card-info">
+                        <span> إجمالي المبيعات</span>
+                        <strong>$24,580</strong>
+                        <p>+12.5% هذا الشهر</p>
+                    </div>
+
+                </div>
+
+                <div class="stats-card">
+                    <div class="icon">💰</div>
+                    <div class="stats-card-info">
+                        <span> إجمالي المبيعات</span>
+                        <strong>$24,580</strong>
+                        <p>+12.5% هذا الشهر</p>
+                    </div>
+
+                </div>
+
+
+                <div class="stats-card">
+                    <div class="icon">💰</div>
+                    <div class="stats-card-info">
+                        <span> إجمالي المبيعات</span>
+                        <strong>$24,580</strong>
+                        <p>+12.5% هذا الشهر</p>
+                    </div>
+
+                </div>
+
+
+                <div class="stats-card">
+                    <div class="icon">💰</div>
+                    <div class="stats-card-info">
+                        <span> إجمالي المبيعات</span>
+                        <strong>$24,580</strong>
+                        <p>+12.5% هذا الشهر</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="panels">
+            <div class="panel">
+                <div class="header">
+                    <h2>آخر الطلبات</h2>
+                    <a href="./orders.html">عرض الكل</a>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                    <thead>
+                        <th> رقم الطلب</th>
+                        <th>العميل </th>
+                        <th>المبلغ</th>
+                        <th>الحالة</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>  #10245</td>
+                           <td>أحمد محمد</td>
+                           <td>$320</td>
+                           <!--هنا في فكرة إن كل بوكس داخل الجدول الذي يمثل البيانات مشكلته في لو حطينا بخلفية مش هنعرف تكون صغيرة على النص حتى لو غيرنا في العرض هيظل في مشكلة وأظن أنها ترجع بسبب طبيعة التاج-->
+                           <td>
+                            <span class=" badge a">مكتمل</span> </td>
+                        </tr>
+
+                        <tr>
+                            <td>  #10245</td>
+                           <td>أحمد محمد</td>
+                           <td>$320</td>
+                           <td> <span class="badge b">قيد المعالجة </span>
+
+                           </td>
+                        </tr>
+
+                         <tr>
+                            <td>  #10245</td>
+                           <td>أحمد محمد</td>
+                           <td>$320</td>
+                           <td>
+                            <span class="badge a">مكتمل</span> 
+                        </td>
+                        </tr>
+                       <tr>
+                            <td>  #10245</td>
+                           <td>أحمد محمد</td>
+                           <td>$320</td>
+                           <td>
+                          <span class="badge c"> ملغي </span>
+                          </td>
+                        </tr>
+
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+             <div class="panel">
+                <div class="header">
+                    <h2>المنتجات الأكثر مبيعاً</h2>
+                    <a href="./products.html">عرض الكل</a>
+                </div>
+                <div class="product-lists">
+                   <div class="product-item">    
+                      <div class="product">
+                    <span>⌚</span>
+                     <div class="product-text">
+                    <h4>ساعة ذكية</h4>
+                    <p>124 مبيعة</p> 
+                    </div>
+                    </div>
+                    <h5>$120</h5>
+                   </div>
+                     <div class="product-item">      
+                   <div class="product">       
+                    <span>⌚</span>
+                     <div class="product-text">
+                    <h4>ساعة ذكية</h4>
+                    <p>124 مبيعة</p> 
+                    </div>
+                   </div>
+                    <h5>$120</h5>
+                   </div>
+                    <div class="product-item">            
+                     <div class="product">    
+                    <span>⌚</span>
+                    <div class="product-text">
+                    <h4>ساعة ذكية</h4>
+                    <p>124 مبيعة</p> 
+                    </div>
+                     </div>
+                    <h5>$120</h5>
+
+                   </div>
+                    <div class="product-item">   
+                      <div class="product">                
+                    <span>⌚</span>
+                      <div class="product-text">
+                    <h4>ساعة ذكية</h4>
+                    <p>124 مبيعة</p> 
+                    </div>
+                     </div>
+                    <h5>$120</h5>
+                   </div>
+
+                </div>
+            </div>
+           </section>
+        </main>
+
+
+
+    </section>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head class="md-5">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlin<link rel=" preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+
+    <title>المستخدمين</title>
+</head>
+<body>
+    <section class="dashbord">
+      
+        <aside class="admin-panel-aside">
+            <p class="logo">Admin<span>Panel</span></p>
+            <nav>
+
+                <a href="./index.html" class="main-link"><span class="material-symbols-outlined">
+                        home
+                    </span>الرئيسية</a>
+                <a  href="./products.html" class="product-link"><span class="material-symbols-outlined">
+                        storefront
+                    </span>المنتجات</a>
+                <a class="active" href="./customers.html" class="customers-link"><span class="material-symbols-outlined">
+                        contacts_product
+                    </span>المستخدمين</a>
+                <a href="./orders.html" class="orders-link">
+                    <span class="material-symbols-outlined">orders</span>الطلبات
+                </a>
+
+            </nav>
+        </aside>
+
+        <main>
+
+            <div class="topbar">
+                <div>
+                    <h1>المستخدمين</h1>
+                    <p>إدارة حسابات المستخدمين</p>
+                </div>
+                <button class="add_prod">
+                    + إضافة مستخدم منتج</button>
+
+            </div>
+             <div class="panel">
+                <div class="toolbar">
+                  <div class="search">
+                     <input type="text" id="textSearch" placeholder="البحث بالاسم أو بريد ...">
+                     <select id="category" name="category">
+                          <option value="">كل الحالات ...</option>
+                          <option value="sucessful">نشط</option> 
+                          <option value="failed">غير نشط</option> 
+                          
+                          
+
+                     </select>
+                  </div>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                    <thead>
+                        <th>المستخدم</th>
+                        <th>البريد الإلكتروني </th>
+                        <th>تاريخ التسجيل</th>
+                        <th>الطلبات</th>
+                        <th>الحالة</th>
+                        <th>الإجراء</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td class="user-name"><span class="avatar">أ</span> أحمد محمد</td>
+                           <td>ahmad@example.com</td>
+                           <td>20 أغسطس 2026</td>
+                           <td>24</td>
+                           <!--هنا في فكرة إن كل بوكس داخل الجدول الذي يمثل البيانات مشكلته في لو حطينا بخلفية مش هنعرف تكون صغيرة على النص حتى لو غيرنا في العرض هيظل في مشكلة وأظن أنها ترجع بسبب طبيعة التاج-->
+                           <td>
+                            <span class=" badge a">نشط</span> </td>
+                        <td><button class="action-btn"><span class="material-symbols-outlined">more_vert</span></button></td>
+                        </tr>
+<tr>
+
+                            <td class="user-name"><span class="avatar">أ</span> أحمد محمد</td>
+                           <td>ahmad@example.com</td>
+                           <td>20 أغسطس 2026</td>
+                           <td>24</td>
+                           <!--هنا في فكرة إن كل بوكس داخل الجدول الذي يمثل البيانات مشكلته في لو حطينا بخلفية مش هنعرف تكون صغيرة على النص حتى لو غيرنا في العرض هيظل في مشكلة وأظن أنها ترجع بسبب طبيعة التاج-->
+                           <td>
+                            <span class=" badge a">نشط</span> </td>
+                        <td><button class="action-btn"><span class="material-symbols-outlined">more_vert</span></button></td>
+                        </tr>
+
+                        <tr>
+
+                            <td class="user-name"><span class="avatar">أ</span> أحمد محمد</td>
+                           <td>ahmad@example.com</td>
+                           <td>20 أغسطس 2026</td>
+                           <td>24</td>
+                           <!--هنا في فكرة إن كل بوكس داخل الجدول الذي يمثل البيانات مشكلته في لو حطينا بخلفية مش هنعرف تكون صغيرة على النص حتى لو غيرنا في العرض هيظل في مشكلة وأظن أنها ترجع بسبب طبيعة التاج-->
+                           <td>
+                            <span class=" badge a">نشط</span> </td>
+                        <td><button class="action-btn"><span class="material-symbols-outlined">more_vert</span></button></td>
+                        </tr>
+                        <tr>
+
+                            <td class="user-name"><span class="avatar">أ</span> أحمد محمد</td>
+                           <td>ahmad@example.com</td>
+                           <td>20 أغسطس 2026</td>
+                           <td>24</td>
+                           <!--هنا في فكرة إن كل بوكس داخل الجدول الذي يمثل البيانات مشكلته في لو حطينا بخلفية مش هنعرف تكون صغيرة على النص حتى لو غيرنا في العرض هيظل في مشكلة وأظن أنها ترجع بسبب طبيعة التاج-->
+                           <td>
+                            <span class=" badge c">غير نشط</span> </td>
+                        <td><button class="action-btn"><span class="material-symbols-outlined">more_vert</span></button></td>
+                        </tr>
+                        <tr>
+
+                            <td class="user-name"><span class="avatar">أ</span> أحمد محمد</td>
+                           <td>ahmad@example.com</td>
+                           <td>20 أغسطس 2026</td>
+                           <td>24</td>
+                           <!--هنا في فكرة إن كل بوكس داخل الجدول الذي يمثل البيانات مشكلته في لو حطينا بخلفية مش هنعرف تكون صغيرة على النص حتى لو غيرنا في العرض هيظل في مشكلة وأظن أنها ترجع بسبب طبيعة التاج-->
+                           <td>
+                            <span class=" badge a">نشط</span> </td>
+                        <td><button class="action-btn"><span class="material-symbols-outlined">more_vert</span></button></td>
+                        </tr>
+                       
+                    </tbody>
+                    </table>
+                </div>
+            </div>  
+
+
+        </main>
+
+    </section>
+     <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: #F5F6F8;
+font-family: "Cairo", sans-serif;
+color: #222222;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    
+} 
+
+.admin-panel-aside{
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 28px 18px;
+    width: 240px;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+}
+
+ .logo {
+ font-size: 24px;
+ font-weight: bold;
+ padding: 0 15px 35px;
+}
+.logo span {
+color: #767EED;
+
+}
+
+.admin-panel-aside nav{
+display: flex;
+flex-direction: column;
+gap:8px;
+}
+
+.admin-panel-aside nav a {
+display: flex;
+align-items: center;
+gap:8px;
+text-decoration: none;
+color:#7b8286;
+padding: 18px 15px;
+transition:0.3s;
+}
+
+.admin-panel-aside nav a:hover,.admin-panel-aside nav a.active{
+background-color: #F0EFFF;
+color:#9FA4F3;
+border-radius: 10px;
+margin-bottom: 5px;
+}
+
+/*Topbar*/
+main{
+   flex:1; 
+   width: calc(100%-240px);
+   margin-right: 240px; /*please skip the sidebar space and be appear after that*/
+   padding: 0px 25px;
+}
+.topbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 35px 0px; 
+}
+
+.topbar p{
+
+margin-top: 10px;
+
+
+}
+
+.topbar .profile {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap:10px;
+}
+/*for circle you should make the width and height in the same precentage*/
+.avatar {
+width:40px;
+height: 40px;
+text-align: center;
+background-color: #e7e6fb;
+border-radius: 50%;
+color:#767EED;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+}
+
+.avater-role{
+
+display: flex;
+flex-direction: column;
+gap:8px;
+
+}
+
+
+.stats-sales {
+
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap:15px;
+
+}
+
+.stats-sales .stats-card {
+background-color: #FFFFFF;
+display: flex;
+align-items: center;
+gap:10px;
+border: 1px solid #d2d1d1;
+border-radius: 10px;
+padding:20px;
+}
+
+.stats-card .icon {
+ width: 50px;
+ height: 50px;
+ font-size:24px;
+ background-color: #F3F2FF;
+ border-radius: 10px;
+ text-align: center;
+
+}
+
+.stats-card .stats-card-info{
+
+display: flex;
+flex-direction: column;
+gap:10px;
+
+}
+
+.stats-card-info span{
+
+color:#BBBEC5;
+font-size:14px;
+
+}
+
+.stats-card-info strong {
+
+font-size: 24px;
+
+}
+
+.stats-card-info p {
+
+color: #3cc647; 
+font-weight: 600;
+font-size: 12px;
+}
+
+.panels {
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+column-gap: 20px;
+}
+
+.panel {
+ background-color: white;
+ margin-top: 20px;
+ padding:20px;
+ border-radius: 20px;
+ border: 1px solid #d2d1d1;
+ border-radius: 10px;
+}
+.panel .header{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+
+/*
+
+padding على الخلايا — الطريقة الأساسية
+
+ده اللي بتستخدمه 90% من الوقت:
+
+css
+th, td {
+  padding: 12px 16px;   
+
+الرقم التاني (16px) هو اللي بيعمل المسافة بين الأعمدة. الميزة إن الخلفية والـ hover بيغطوا المساحة كلها، فالشكل نضيف.
+
+2) border-spacing — مسافة حقيقية بين الخلايا
+
+لازم تشيل border-collapse: collapse الأول:
+
+css
+table {
+  border-collapse: separate;
+  border-spacing: 12px 8px; 
+}
+thead th:not(:first-child),
+tbody td:not(:first-child) {
+   
+  padding: 20px 100px;
+  
+}
+
+thead th:first-child, tbody td:first-child{
+ padding: 0px 30px;
+
+}*/ 
+  
+
+table {
+width: 100%;
+border-collapse: collapse;
+min-width: 650px;
+}
+
+
+table thead th {
+text-align: right;    
+background-color: #FAFBFC;
+color:#BBBEC5;
+font-weight: bold;
+border-bottom: 1px solid #e7e7e8;
+font-size:15px;
+padding: 20px 0px;
+}
+
+/*كنا بنحاول نعمل بوردر لتحت بحيث نعمل خط أفقي لكل صف ولكن لم تنجح فالأفضل وبوردر لفوق*/
+
+table tbody td{
+padding: 20px 0px;
+border-top: 1px solid #e7e7e8;
+font-size:13px;
+
+
+}
+ .badge{
+display: inline-block;
+color: rgb(88, 220, 88);
+background-color: rgb(238, 235, 235) ;
+padding: 4px 8px;
+border-radius: 14px;
+}
+
+ td .badge.a{
+background-color:#EAF8F1;
+color: rgb(0, 222, 0);
+}
+td .badge.b{
+background-color:#FFF6DF;
+color:#fdc73c ;
+}
+td .badge.c{
+background-color:#FFF0F0;
+color:#f64646;
+}
+
+.panel .product-lists .product-item {
+
+display: flex;
+gap:15px;
+justify-content: space-between;
+align-items: center;
+}
+
+.panel .product-lists .product-item .product{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap:20px;
+padding: 20px 0px;
+font-size: 12px;
+
+
+}
+
+.panel .product-lists .product-item:nth-child(n+2){
+border-top: 1px solid #e7e7e8;
+}
+
+
+.panel .product-lists .product-item .product span{
+background-color: #F5F5F7;
+font-size: 20px;
+padding:5px;
+}
+
+.add_prod {
+
+background-color: #676ED7;
+color:white;
+border: none;
+border-radius: 10px;
+padding: 10px;
+
+}
+
+.search {
+
+display: flex;
+gap:20px;
+
+}
+
+.search #textSearch {
+
+width:90%;
+
+border: 1px solid rgb(225, 222, 222);
+
+}
+
+.search #textSearch, .search #category {
+border: 1px solid rgb(225, 222, 222);
+padding:10px;
+border-radius: 10px;
+background-color: white;
+}
+
+.search #category {
+
+width: 10%;
+
+}
+
+.action-btn{
+
+background-color: white;
+border:none;
+color:#7b8286;
+cursor:pointer;
+
+}
+
+.user-name {
+display: flex; 
+align-items: center;
+gap:8px;
+
+}
+
+.action-menu {
+
+background-color: white;
+border: none;
+border: 1px solid gray;
+border-radius: 8px;
+position:absolute;
+cursor: pointer;
+padding:6px;
+top:38px;
+left:18px;
+width:150px;
+box-shadow:  0 8px 25px rgba(0,0,0,0.12);
+z-index: 100;
+
+}
+
+.action-menu button {
+  display: block;
+  background: transparent;
+  color:#7b8286;
+  font-size:13px;
+  border:none;
+  padding:10px;  
+
+
+
+}
+
+
+.action-menu button:hover {
+  background-color:#d2d3d4;
+
+
+}
+
+.action-menu button.delete {
+  color:red;
+
+
+}
+
+
+.form-wrap form{
+padding: 100px;
+display:flex;
+flex-direction: column;
+gap:10px;
+align-items: center;
+}
+
+.form-wrap form input,select {
+
+padding:10px;
+border:1px solid #ccd1d3;
+background-color: #ffffff;
+border-radius: 8px;
+width: 500px;
+}
+
+
+.slide-show{
+display: flex; 
+flex-direction: column;
+gap: 30px;
+width:250px;
+height:100%;
+border: 1px solid #BBBEC5;
+border-radius: 10px;
+direction: rtl;
+padding:20px;
+background-color:rgb(226, 233, 246);
+position: fixed;
+top:0;
+bottom: 0;
+left:0;
+visibility: visible;
+z-index: 1000;
+}
+
+.slide-show p {
+font-size:30px;
+margin-bottom: 20px;
+
+}
